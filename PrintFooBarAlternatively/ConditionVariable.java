@@ -10,7 +10,7 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
 
-        SemaphorePractice sp = new SemaphorePractice(10);
+        ConditionVariable sp = new ConditionVariable(10);
         ExecutorService executorService = newFixedThreadPool(3);
 
         executorService.submit(() -> {
